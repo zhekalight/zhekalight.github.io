@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oreol</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="close__mod"><img src="img/close.svg" alt=""></div>
+        <div class="content__modal">
+            <form action="">
+                <div class="input">
+                    <input type="text" name="login" placeholder="Login"> 
+                </div>
+                <div class="input">
+                    <input type="password" name="password" placeholder="Password"> 
+                </div>
+                <button class="modal__button">Sing in</button>
+            </form>
+        </div>    
+    </div>
+    <div class="black__fill"></div>
+    <div class="cart__box animate" id="cart__box">
+        <div class="title__cart">
+            <p>Your Shopping Cart </p>
+            <img src="img/right_icon.svg" alt="">
+        </div>
+        <div class="content__cart">
+            <button id="order" type="button" class="order">
+                continue
+            </button>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__inner">
+            <div class="container"> 
+               <div class="header__top">
+                    <div class="header__top-sign">
+                        <div class="header__top-btn" id="sign">
+                        <img src="img/sign.svg" alt="">
+                        <span>SING IN</span>
+                        </div>                
+                        <div class="header__top-location">
+                        Location: <span>UKRAINE</span>
+                        </div>
+                    </div>
+
+                    <div class="header__top-logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+
+                    <div class="header__top-sign">
+                        <div class="header__top-location currancy">
+                            Currancy: <span>US DOLLAR</span>
+                        </div>
+                        <div class="header__top-btn cart" id="cart">
+                            <img src="img/shopping-cart.svg" alt="">
+                            <span>CART</span>
+                        </div>
+                    </div>
+               </div>
+            </div>    
+        </div>
+        <div class="header__nav">
+            <div class="container">
+                <div class="header__bottom">
+                    <nav class="nav">
+                        <a href="#">MENS</a>
+                        <a href="#">WOMENS</a>
+                        <a href="#">GOODS</a>
+                        <a href="#">ACCESSORIES</a>
+                        <a href="#">BLOG</a>
+                    </nav>
+                    <div class="search__panel" id="search__panel">
+                        <input type="text" placeholder="Search..."> 
+                    </div>
+                    <div class="search__button" id="search__button">
+                        <img src="img/search.svg" alt="">
+                    </div>
+                </div>    
+            </div>    
+        </div>    
+    </header>
+    
+    <div class="intro">
+        <div class="container"> 
+            <div class="intro__main">
+            <div class="intro__leftbar">
+                
+                <div id="category" class="box">
+                    
+                    <div class="list__box">
+                        <div class="title__box">
+                            <p>Woman</p>
+                            <div class="list__box-icon">
+                                <img src="img/right_icon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="list__link">
+                            <nav>
+                                <a href="#">Jackets</a>
+                                <a href="#">Blazers</a>
+                                <a href="#">Suits</a>
+                                <a href="#">Trousers</a>
+                                <a href="#">Jeans</a>
+                                <a href="#">Shirts</a>
+                            </nav>
+                        </div>
+                    </div>
+                     <div class="list__box">
+                        <div class="title__box">
+                            <p>Man</p>
+                            <div class="list__box-icon">
+                                <img src="img/right_icon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="list__link">
+                            <nav>
+                                <a href="#">Jackets</a>
+                                <a href="#">Blazers</a>
+                                <a href="#">Suits</a>
+                                <a href="#">Trousers</a>
+                                <a href="#">Jeans</a>
+                                <a href="#">Shirts</a>
+                            </nav>
+                        </div>
+                    </div>
+                     <div class="list__box">
+                        <div class="title__box">
+                            <p>Kids</p>
+                            <div class="list__box-icon">
+                                <img src="img/right_icon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="list__link">
+                            <nav>
+                                <a href="#">Jackets</a>
+                                <a href="#">Blazers</a>
+                                <a href="#">Suits</a>
+                                <a href="#">Trousers</a>
+                                <a href="#">Jeans</a>
+                                <a href="#">Shirts</a>
+                            </nav>
+                        </div>
+                    </div>
+                     <div class="list__box">
+                        <div class="title__box">
+                            <p>Shoes&bags</p>
+                            <div class="list__box-icon">
+                                <img src="img/right_icon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="list__link">
+                            <nav>
+                                <a href="#">Jackets</a>
+                                <a href="#">Blazers</a>
+                                <a href="#">Suits</a>
+                                <a href="#">Trousers</a>
+                                <a href="#">Jeans</a>
+                                <a href="#">Shirts</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter__box box">
+                    <div class="title__filter">
+                        colors
+                    </div>
+                    <div class="content__filter color__list">
+                        <ul class="list__filter">
+                            <li>
+                                <input id ="color1" type="checkbox">
+                                <label style ="background-color: #1476f1" for="color1"></label>
+                            </li>
+                            <li>
+                                <input id="color2" type="checkbox">
+                                <label style ="background-color: #82d889" for="color2"></label>
+                            </li>
+                            <li>
+                                <input id="color3" type="checkbox">
+                                <label style ="background-color: #3c3d41" for="color3"></label>
+                            </li>
+                            <li>
+                                <input id="color4" type="checkbox">
+                                <label style ="background-color: #838d8f" for="color4"></label>
+                            </li>
+                            <li>
+                                <input id="color5" type="checkbox">
+                                <label style ="background-color: #b8c6c7" for="color5"></label>
+                            </li>
+                            <li>
+                                <input id="color6" type="checkbox">
+                                <label style ="background-color: #ce954a" for="color6"></label>
+                            </li>
+                            <li>
+                                <input id="color7" type="checkbox">
+                                <label style ="background-color: #7b7f91" for="color7"></label>
+                            </li>
+                            <li>
+                                <input id="color8" type="checkbox">
+                                <label style ="background-color: #777777" for="color8"></label>
+                            </li>
+                            <li>
+                                <input id="color9" type="checkbox">
+                                <label style ="background-color: #bdbdbd" for="color9"></label>
+                            </li>
+                            <li>
+                                <input id="color10" type="checkbox">
+                                <label style ="background-color: #eeeeee" for="color10"></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="filter__box box">
+                    <div class="title__filter">
+                        SIZE
+                    </div>
+                    <div class="content__filter">
+                        <ul class="list__filter">
+                            <li>
+                                <input id="size1" type="checkbox">
+                                <label style for="size1">XS</label>
+                            </li>
+                            <li>
+                                <input id="size2" type="checkbox">
+                                <label style for="size2">S</label>
+                            </li>
+                            <li>
+                                <input id="size3" type="checkbox">
+                                <label style for="size3">M</label>
+                            </li>
+                            <li>
+                                <input id="size4" type="checkbox">
+                                <label style for="size4">L</label>
+                            </li>
+                            <li>
+                                <input id="size5" type="checkbox">
+                                <label style for="size5">XL</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter__box box">
+                    <div class="title__filter">
+                        PRICE RANGE
+                    </div>
+                    <div class="content__filter">
+                        <div class="slider__price" id="slider__price"></div>
+                        <div class="price__box">
+                            <input type="text" name="minPrice" value="">
+                            <input type="text" name="maxPrice" value="">  
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="intro__rightbar">
+               <div class="list_product">
+                   <a class="product box">
+                       <div class="new box">
+                           new
+                       </div>
+                       <div class="img_product">
+                       <img src="img/02.jpg" alt="">
+                       </div>
+                       <h2>Our Legacy Splash Jacquard Knit</h2>
+                       <p>Black Grey Plants</p>
+                       <p class="price">290$</p>
+                   </a>
+                    <a class="product box">
+                       <div class="img_product">
+                       <img src="img/02.jpg" alt="">
+                       </div>
+                       <h2>Our Legacy Splash Jacquard Knit</h2>
+                       <p>Black Grey Plants</p>
+                       <p class="price">290$</p>
+                   </a>
+                   <a class="product box">
+                       <div class="img_product">
+                       <img src="img/02.jpg" alt="">
+                       </div>
+                       <h2>Our Legacy Splash Jacquard Knit</h2>
+                       <p>Black Grey Plants</p>
+                       <p class="price">290$</p>
+                   </a>
+                   <a class="product box">
+                       <div class="img_product">
+                       <img src="img/02.jpg" alt="">
+                       </div>
+                       <h2>Our Legacy Splash Jacquard Knit</h2>
+                       <p>Black Grey Plants</p>
+                       <p class="price">290$</p>
+                   </a>
+                   <a class="product box">
+                       <div class="img_product">
+                       <img src="img/02.jpg" alt="">
+                       </div>
+                       <h2>Our Legacy Splash Jacquard Knit</h2>
+                       <p>Black Grey Plants</p>
+                       <p class="price">290$</p>
+                   </a>
+                   <a class="product box">
+                       <div class="img_product">
+                       <img src="img/02.jpg" alt="">
+                       </div>
+                       <h2>Our Legacy Splash Jacquard Knit</h2>
+                       <p>Black Grey Plants</p>
+                       <p class="price">290$</p>
+                   </a>
+                   <a class="product box">
+                       <div class="img_product">
+                       <img src="img/02.jpg" alt="">
+                       </div>
+                       <h2>Our Legacy Splash Jacquard Knit</h2>
+                       <p>Black Grey Plants</p>
+                       <p class="price">290$</p>
+                   </a>
+                   <a class="product box">
+                       <div class="img_product">
+                       <img src="img/02.jpg" alt="">
+                       </div>
+                       <h2>Our Legacy Splash Jacquard Knit</h2>
+                       <p>Black Grey Plants</p>
+                       <p class="price">290$</p>
+                   </a>
+                   <a class="product box">
+                       <div class="img_product">
+                       <img src="img/02.jpg" alt="">
+                       </div>
+                       <h2>Our Legacy Splash Jacquard Knit</h2>
+                       <p>Black Grey Plants</p>
+                       <p class="price">290$</p>
+                   </a>
+               </div>
+                <button class="load_more" id="load__more">
+                    Load More
+                </button>
+            </div>
+            </div> 
+        </div>      
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <nav class="footer__nav">
+                    <a href="#">Legal info</a>
+                    <a href="#">terms</a>
+                    <a href="#">data privacy</a>
+                    <a href="#">sizing</a>
+                    <a href="#">shopping</a>
+                    <a href="#">contact</a>
+                </nav>
+            </div>
+            <div class="footer__newsletter">
+                <p>Newsletter</p>
+                <input type="text" placeholder="E-mail">
+            </div>
+            <div>
+                <div class="soc__list">
+                    <a target="_blank"href="#"><img src="img/soc_fb.svg" alt=""></a>
+                    <a target="_blank"href="#"><img src="img/soc_insta.svg" alt=""></a>
+                    <a target="_blank"href="#"><img src="img/soc_tw.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/control.js"></script>
+</body>
+</html>
