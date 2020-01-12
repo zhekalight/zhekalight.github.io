@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis:700|Indie+Flower|Raleway|Ranga|Roboto|Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Ranga|Roboto|Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -20,7 +19,7 @@
                <a class = 'nav__link' href="#" data-scroll = "#intro">Main</a>
                <a class = 'nav__link' href="#" data-scroll = "#about">About</a>
                <a class = 'nav__link' href="#" data-scroll = "#skills">Skills</a>
-               <a class = 'nav__link ' href="https://rh-s.com" >Work</a>
+               <a class = 'nav__link ' href="#" data-scroll = "#work">Work</a>
                <a class = 'nav__link ' href="#" data-scroll = "#contact">Contact</a>
            </nav>
            <button class="nav-toggle" id = "nav__toggle" type="button">
@@ -51,7 +50,7 @@
    <div class = "container">
       <div class = "section__header">
           <h3 class = "section__suptitle">Portfolio</h3>
-          <img src="img/icon.jpg" alt="">
+          <img src="img/icon.png" alt="">
           <h2 class = "section__title">About me</h2>
           <div class = "section__text">
               <p> I love learning new and better ways to create seamless clean, efficient and scalable code. I consider work an ongoing education and I'm always looking for opportunities to work with those who are willing to share their knoledge. It's just start of my developer way. I want to improve my skills in frontend and backend and I will do my best to achieve this goals. </p>
@@ -89,26 +88,42 @@
           <h2 class = "section__title">About me</h2>
         </div>
           <div class="skills">
-              <div class="skills__block" style="background-image: url(img/books-4211025_640.jpg)">
+              <div class="skills__block" style="background-image: url(img/books.jpg)">
                 <span><p>FULL NAME: Evgeniy Barisov</p> <p>FULL YEARS: 23 </p></span>
               </div>
-              <div class="skills__block" style="background-image: url(img/artificial-intelligence-3382507_640.jpg)">
-                <span>JavaScript <p>(ES6, Jquery, OOP, async/await, iterators...)</p> php;</span>
+              <div class="skills__block" style="background-image: url(img/artificial-intelligence.png)">
+                <span>JavaScript <p>(ES6, Jquery...)</p> php;</span>
               </div>
-              <div class="skills__block" style="background-image: url(img/beach-2213618_640.jpg)">
+              <div class="skills__block" style="background-image: url(img/beach.png)">
                 <span>Knowledge of HTML5 and CSS3(fixed width, adaptive and responsive layout, flexbox, grid);</span>
               </div>
-              <div class="skills__block" style="background-image: url(img/planner-4233900_640.jpg)">
-                <span>LANGUAGES: <p>- native Ukrainian, Russian;</p>- (U)intermediate English(br); <p>- elementary German;</p></span>
+              <div class="skills__block" style="background-image: url(img/planner.jpg)">
+                <span>LANGUAGES: <p>- native Ukrainian, Russian;</p>- intermediate English; <p>- elementary German;</p></span>
               </div>
-              <div class="skills__block" style="background-image: url(img/ipad-605439_1280.jpg)">
-                <span> Passed courses of management <p>Have experience working in a team; </p></span>
+              <div class="skills__block" style="background-image: url(img/ipad.png)">
+                <span> University degree; <p> Passed courses of management; </p> <p> 1 year work experience;</p></span>
               </div>
-              <div class="skills__block" style="background-image: url(img/phone-3594206_640.jpg)">
-                <span>Beginner of ReactJS, WordPress</span>
+              <div class="skills__block" style="background-image: url(img/phone.jpg)">
+                <span>Beginner of ReactJS, Redux, WordPress</span>
               </div>
          </div>
    </div>
+</section>
+
+<section class="section" id = "work">
+    <div class="container">
+        <div class="section__header">
+            <h3 class="section__suptitle">My projects</h3>
+            <h2 class = "section__title">Recent works</h2>
+        </div>
+        <div class="section__recent-works">
+            <div class="recent-site"><a href="https://rh-s.com"><h4>Remote helpers</h4><img src="img/remote.png" alt=""></a></div>
+            <div class="recent-site"><a href="http://krovelniidom.com/"><h4>Krovelniy dom</h4><img src="img/krovlya.png" alt=""></a></div>
+            <div class="recent-site"><a href="https://zhekalight.github.io/oreol/"><h4>Internet store</h4><img src="img/oreol.png" alt=""></a></div>
+            <div class="recent-site"><a href="https://zhekalight.github.io/react/"><h4>React projects</h4><img src="img/react.png"  alt=""></a></div>
+
+        </div>
+    </div>
 </section>
 
 <!--Circular-menu-->
@@ -124,7 +139,7 @@
                  <span class ="circular-menu__item">JS(ES6)</span>
                  <span class ="circular-menu__item">Jquery</span>
                  <span class ="circular-menu__item">CSS3</span>
-                 <span class ="circular-menu__item">React(B)</span>
+                 <span class ="circular-menu__item">React</span>
                  <span class ="circular-menu__item">.git</span>
                  <span class ="circular-menu__item">PHP</span>
                  <span class ="circular-menu__item">SCSS</span>
@@ -138,16 +153,16 @@
    <footer class="section__contact" id ="contact" >
       <ul class = "social">
         <li class = "social__item viber">
-          <a class = "fab fa-viber" href="viber://chat?number=+380500381491"></a>
+          <a href="viber://chat?number=+380500381491"><img src="img/viber.svg" alt="" width="34px" height="34px"></a>
         </li>
-        <li class = "social__item skype">
-          <a class = "fab fa-skype" href="skype:zhekalight"></a>
+         <li class = "social__item skype">
+          <a href="skype:zhekalight"><img src="img/skype.svg" alt="" width="34px" height="34px"></a>
         </li>
-        <li class = "social__item instagram">
-          <a class = "fab fa-instagram"href="https://www.instagram.com/evgeniy_barisov/"></a>
+         <li class = "social__item instagram">
+          <a href="https://www.instagram.com/evgeniy_barisov/"><img src="img/instagram.svg" alt="" width="34px" height="34px"></a>
         </li>
-        <li class = "social__item google">
-          <a class = "fab fa-google"href="mailto:uzhekalight@gmail.com"></a>
+         <li class = "social__item google">
+          <a href="mailto:uzhekalight@gmail.com"><img src="img/google.svg" alt=""></a>
         </li>
       </ul>
    </footer>
