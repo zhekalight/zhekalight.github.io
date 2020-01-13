@@ -220,7 +220,7 @@ body {
     background-color: white;
 
     position: absolute;
-    top:0;
+    top:50%;
     right:0;
 
     margin: auto;
@@ -668,7 +668,7 @@ body {
     }
     .nav.active {
         display: block;
-        background-color: green;
+        background-color: grey;
         opacity: .75;
     }
     .nav__link {
@@ -749,6 +749,9 @@ body {
     .section {
         padding : 30px 0;
     }
+    
+    
+    /*    ------------work---------------------*/
 
     /* circular menu */
     .circular-menu {
@@ -763,5 +766,15 @@ body {
     .circular-menu__button {
         width: 20vw;
         height: 20vw;
+    }
+    .section__recent-works {
+        justify-content: center;
+    }
+    .recent-site {
+        width: 85%;
+        margin: 5px;
+    }
+    .social {
+        width: 80%;
     }
  }
